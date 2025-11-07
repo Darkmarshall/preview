@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | GeoHarmonics Society (GHS)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        🌍 GeoHarmonics Society
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="units.html">Units</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge">🚀 Our Work</div>
+        <h1>Featured Projects</h1>
+        <p>Innovative solutions at the intersection of Earth science, AI, and sustainable technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="page-content">
+    <div class="container">
+      
+      <!-- Projects Grid 
+      <div class="projects-grid">
+        
+        <div class="project-card-full reveal">
+          <div class="project-image">🌾</div>
+          <div class="project-content-full">
+            <div class="project-tag">Active • Research & Tech Units</div>
+            <h2>GeoAI for Agriculture</h2>
+            <p class="project-lead">Using satellite data and machine learning to improve crop yield predictions and support sustainable farming practices.</p>
+            
+            <div class="project-details">
+              <h4>Overview</h4>
+              <p>This project combines remote sensing technology with advanced AI algorithms to analyze agricultural patterns, predict crop yields, and provide actionable insights to farmers. We're working with local farming communities to create accessible tools that can help optimize resource usage and improve food security.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Satellite imagery analysis for crop health monitoring</li>
+                <li>Machine learning models for yield prediction</li>
+                <li>Real-time alerts for pest and disease detection</li>
+                <li>Resource optimization recommendations</li>
+              </ul>
+
+              <h4>Technologies Used</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Sentinel-2</span>
+                <span class="tech-tag">GEE</span>
+                <span class="tech-tag">QGIS</span>
+              </div>
+
+              <h4>Current Status</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%"></div>
+              </div>
+              <p style="margin-top: 0.5rem; color: var(--text-dim); font-size: 0.875rem;">65% Complete - Field testing phase</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">View Full Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card-full reveal">
+          <div class="project-image">🌐</div>
+          <div class="project-content-full">
+            <div class="project-tag">Active • Tech Unit</div>
+            <h2>Earth Pulse</h2>
+            <p class="project-lead">A real-time geospatial dashboard for monitoring environmental changes and human impact zones across different regions.</p>
+            
+            <div class="project-details">
+              <h4>Overview</h4>
+              <p>Earth Pulse is an interactive web platform that visualizes environmental data from multiple sources, providing real-time insights into climate patterns, deforestation, urbanization, and other critical environmental indicators. The dashboard serves researchers, policymakers, and the general public.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Interactive map with multiple data layers</li>
+                <li>Real-time environmental indicators</li>
+                <li>Historical trend analysis and visualization</li>
+                <li>Custom region selection and reporting</li>
+                <li>Mobile-responsive design</li>
+              </ul>
+
+              <h4>Technologies Used</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+
+              <h4>Current Status</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 45%"></div>
+              </div>
+              <p style="margin-top: 0.5rem; color: var(--text-dim); font-size: 0.875rem;">45% Complete - Beta development</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">View Full Details →</a>
+          </div>
+        </div>
+
+        <div class="project-card-full reveal">
+          <div class="project-image">🗺️</div>
+          <div class="project-content-full">
+            <div class="project-tag">Conceptual • All Units</div>
+            <h2>Harmony Map</h2>
+            <p class="project-lead">A conceptual visualization platform connecting geoscience data, human activities, and technological innovation.</p>
+            
+            <div class="project-details">
+              <h4>Overview</h4>
+              <p>Harmony Map is an ambitious project to create a unified visualization framework that shows the relationships between natural systems, human development, and technological interventions. It aims to help stakeholders understand the complex interdependencies in our Earth-Human-Technology ecosystem.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Multi-dimensional data integration</li>
+                <li>Network visualization of system relationships</li>
+                <li>Scenario modeling and simulation</li>
+                <li>Collaborative annotation and insights</li>
+                <li>Educational modules for different audiences</li>
+              </ul>
+
+              <h4>Technologies Used</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Neo4j</span>
+              </div>
+
+              <h4>Current Status</h4>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 20%"></div>
+              </div>
+              <p style="margin-top: 0.5rem; color: var(--text-dim); font-size: 0.875rem;">20% Complete - Concept & planning phase</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary">View Full Details →</a>
+          </div>
+        </div>
+
+      </div>
+      -->
+
+      <div class="cta-section reveal">
+        <h2>Have a Project Idea?</h2>
+        <p>We're always looking for new project opportunities and collaborations. Share your ideas with us!</p>
+        <a href="contact.html" class="btn btn-primary">Propose a Project →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>🌍 GeoHarmonics Society</h4>
+          <p style="color: var(--text-dim); margin-top: 0.5rem;">Harmonizing Earth, science, and civilization through student-led research and innovation.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="units.html">Our Units</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:geoharmonicssociety@gmail.com">geoharmonicssociety@gmail.com</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="contact.html">Join Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GeoHarmonics Society | Designed by the IT Unit | A Student Research Initiative</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

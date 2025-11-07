@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | GeoHarmonics Society (GHS)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        🌍 GeoHarmonics Society
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="units.html">Units</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge">📚 Research Output</div>
+        <h1>Publications & Research</h1>
+        <p>Explore articles, reports, and research papers from members of the GeoHarmonics Society.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="page-content">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" onclick="filterPublications('all')">All</button>
+        <button class="filter-btn" onclick="filterPublications('papers')">Research Papers</button>
+        <button class="filter-btn" onclick="filterPublications('reports')">Reports</button>
+        <button class="filter-btn" onclick="filterPublications('articles')">Articles</button>
+      </div>
+
+      <!-- Publications List -->
+      <div class="publications-list">
+        
+        <div class="publication-item reveal" data-category="papers">
+          <div class="pub-icon">📄</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Research Paper</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>The Harmony Principle in Geospatial Science</h3>
+            <p class="pub-authors">By Research & Learning Unit Members</p>
+            <p class="pub-description">An exploration of integrative approaches to geospatial analysis, examining how natural systems, human activities, and technological tools can be harmonized for sustainable development outcomes.</p>
+            <div class="pub-tags">
+              <span class="tag">Geospatial Science</span>
+              <span class="tag">Sustainability</span>
+              <span class="tag">Systems Thinking</span>
+            </div>
+            <div class="pub-actions">
+              <a href="assets/pdfs/ghs-paper1.pdf" class="btn btn-secondary btn-sm" download>
+                <span>Download PDF</span>
+              </a>
+              <a href="#" class="pub-link">View Abstract →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item reveal" data-category="papers">
+          <div class="pub-icon">📄</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Research Paper</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>Artificial Intelligence in Earth Observation</h3>
+            <p class="pub-authors">By Research & Learning Unit Members</p>
+            <p class="pub-description">A comprehensive review of machine learning applications in satellite imagery analysis, remote sensing, and environmental monitoring, with case studies from our ongoing projects.</p>
+            <div class="pub-tags">
+              <span class="tag">AI/ML</span>
+              <span class="tag">Remote Sensing</span>
+              <span class="tag">Earth Observation</span>
+            </div>
+            <div class="pub-actions">
+              <a href="assets/pdfs/ghs-paper2.pdf" class="btn btn-secondary btn-sm" download>
+                <span>Download PDF</span>
+              </a>
+              <a href="#" class="pub-link">View Abstract →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item reveal" data-category="papers">
+          <div class="pub-icon">📄</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Research Paper</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>Sustainability Through GeoAI and Remote Sensing</h3>
+            <p class="pub-authors">By All Units Collaboration</p>
+            <p class="pub-description">An interdisciplinary study examining how geospatial AI technologies can be leveraged to monitor, analyze, and promote sustainable practices in agriculture, urban planning, and natural resource management.</p>
+            <div class="pub-tags">
+              <span class="tag">GeoAI</span>
+              <span class="tag">Sustainability</span>
+              <span class="tag">Policy</span>
+            </div>
+            <div class="pub-actions">
+              <a href="assets/pdfs/ghs-paper3.pdf" class="btn btn-secondary btn-sm" download>
+                <span>Download PDF</span>
+              </a>
+              <a href="#" class="pub-link">View Abstract →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item reveal" data-category="reports">
+          <div class="pub-icon">📊</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Technical Report</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>GHS Annual Research Report 2024-2025</h3>
+            <p class="pub-authors">By GeoHarmonics Society</p>
+            <p class="pub-description">A comprehensive overview of our research activities, project outcomes, member contributions, and future directions for the academic year 2024-2025.</p>
+            <div class="pub-tags">
+              <span class="tag">Annual Report</span>
+              <span class="tag">Overview</span>
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="btn btn-secondary btn-sm">
+                <span>Download PDF</span>
+              </a>
+              <a href="#" class="pub-link">View Summary →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item reveal" data-category="articles">
+          <div class="pub-icon">✍️</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Blog Article</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>Ethics in AI-Powered Environmental Monitoring</h3>
+            <p class="pub-authors">By Philosophy & Communication Unit</p>
+            <p class="pub-description">An exploration of the ethical considerations surrounding the use of artificial intelligence in environmental science, including privacy concerns, data ownership, and algorithmic bias.</p>
+            <div class="pub-tags">
+              <span class="tag">Ethics</span>
+              <span class="tag">AI</span>
+              <span class="tag">Opinion</span>
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="pub-link">Read Article →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item reveal" data-category="articles">
+          <div class="pub-icon">✍️</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-type">Blog Article</span>
+              <span class="pub-date">2025</span>
+            </div>
+            <h3>Getting Started with Geospatial Analysis</h3>
+            <p class="pub-authors">By Research & Learning Unit</p>
+            <p class="pub-description">A beginner-friendly guide to geospatial analysis tools, techniques, and resources for students interested in entering the field of GIS and remote sensing.</p>
+            <div class="pub-tags">
+              <span class="tag">Tutorial</span>
+              <span class="tag">Education</span>
+              <span class="tag">GIS</span>
+            </div>
+            <div class="pub-actions">
+              <a href="#" class="pub-link">Read Article →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cta-section reveal">
+        <h2>Contribute Your Research</h2>
+        <p>GHS members are encouraged to share their research findings. Contact us to publish your work through our platform.</p>
+        <a href="contact.html" class="btn btn-primary">Submit Your Work →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>🌍 GeoHarmonics Society</h4>
+          <p style="color: var(--text-dim); margin-top: 0.5rem;">Bridging Earth, humanity, and technology through student-led research and innovation.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="units.html">Our Units</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:geoharmonicsociety@gmail.com">geoharmonicsociety@gmail.com</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="contact.html">Join Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GeoHarmonics Society | Designed by the IT Unit | A Student Research Initiative</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

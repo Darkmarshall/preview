@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | GeoHarmonics Society (GHS)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        🌍 GeoHarmonics Society
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="units.html">Units</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge">💬 Get in Touch</div>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out for inquiries, collaborations, or to join our community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="page-content">
+    <div class="container">
+      
+      <div class="contact-grid">
+        
+        <!-- Contact Form -->
+        <div class="contact-form-section reveal">
+          <h2>Send Us a Message</h2>
+          <p style="color: var(--text-dim); margin-bottom: 2rem;">Fill out the form below and we'll get back to you as soon as possible.</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Marshall Lucas">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I'm interested in *</label>
+              <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="membership">Joining as a Member</option>
+                <option value="collaboration">Research Collaboration</option>
+                <option value="project">Project Partnership</option>
+                <option value="publication">Publication Submission</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-section">
+          
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">📧</div>
+            <h3>Email Us</h3>
+            <p>For all inquiries and correspondence</p>
+            <a href="mailto:geoharmonicsociety@gmail.com" class="contact-link">geoharmonicssociety@gmail.com</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">💻</div>
+            <h3>GitHub</h3>
+            <p>Check out our open-source projects</p>
+            <a href="#" class="contact-link">github.com/geoharmonics</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">📍</div>
+            <h3>Location</h3>
+            <p>Department of Geomatics<br>University of Benin</p>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">👥</div>
+            <h3>Join Our Team</h3>
+            <p>We welcome students from all disciplines who share our passion for harmonizing Earth, science, and civilization.</p>
+            <a href="#" class="contact-link">Learn about membership →</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section reveal">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>Who can join GHS?</h4>
+            <p>GHS is open to all students regardless of their field of study. We believe diverse backgrounds strengthen our interdisciplinary approach.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>How do I get involved in projects?</h4>
+            <p>Once you join, you'll be matched with a unit based on your interests. Projects are collaborative and members can contribute based on their skills and availability.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Do I need technical skills?</h4>
+            <p>Not necessarily! We have roles for researchers, communicators, designers, and more. Technical skills can be learned through our workshops and mentorship programs.</p>
+          </div>
+
+         
+
+          <div class="faq-item">
+            <h4>Can I propose a project idea?</h4>
+            <p>Absolutely! We encourage members to bring their ideas. Projects that align with our mission and have sufficient interest are developed collaboratively.</p>
+          </div>
+
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>🌍 GeoHarmonics Society</h4>
+          <p style="color: var(--text-dim); margin-top: 0.5rem;">Harmonizing Earth, science, and civilization through student-led research and innovation.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="units.html">Our Units</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:geoharmonicssociety@gmail.com">geoharmonicsociety@gmail.com</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="contact.html">Join Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 GeoHarmonics Society |  A Student Research Initiative</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
